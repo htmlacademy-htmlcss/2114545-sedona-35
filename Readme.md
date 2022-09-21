@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Зеленцова](https://up.htmlacademy.ru/htmlcss/35/user/2114545).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic)
 
 ---
 
