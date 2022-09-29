@@ -18,7 +18,7 @@
 		"stylelint": "^14.12.1"
 	},
 	"scripts": {
-		"lint": "editorconfig-cli && stylelint 'styles/style.css' && gulp validateMarkup --silent",
+		"lint": "editorconfig-cli && stylelint \"styles/style.css\" && gulp validateMarkup --silent",
 		"build": "gulp compileProject",
 		"start": "gulp"
 	},
