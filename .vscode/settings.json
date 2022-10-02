@@ -13,7 +13,7 @@
 	"editor.linkedEditing": true,
 	"editor.renderWhitespace": "selection",
 	"editor.wordWrap": "on",
-	"files.autoSave": "afterDelay",
+	"files.autoSave": "onFocusChange",
 	"files.insertFinalNewline": true,
 	"files.trimFinalNewlines": true,
 	"files.trimTrailingWhitespace": true,
