@@ -29,5 +29,8 @@
 		"scss"
 	],
 	"svg.preview.boundingBox": true,
-	"svg.preview.transparencyGrid": true
+	"svg.preview.transparencyGrid": true,
+	"githubPullRequests.ignoredPullRequestBranches": [
+		"master"
+	]
 }
