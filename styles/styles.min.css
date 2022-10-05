@@ -3,3 +3,7 @@ img {
 	height: auto;
 	object-fit: contain
 }
+
+.visually-hidden {
+	display: none;
+}
