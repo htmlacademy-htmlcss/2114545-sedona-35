@@ -64,8 +64,7 @@ body {
 	color: #ffffff;
 	font-weight: 700;
 	text-decoration: none;
-	width: 160px;
-	height: 36px;
+	padding: 8px 50px;
 }
 
 .greeting {
@@ -81,6 +80,7 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 51px 371px 82px 371px;
 }
 
 .advantages-text {
@@ -183,8 +183,7 @@ body {
 	line-height: 36px;
 	color: #ffffff;
 	font-weight: 700;
-	width: 376px;
-	height: 52px;
+	padding: 8px 50px;
 }
 
 .subscription {
@@ -194,7 +193,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: top;
-	height: 415px;
 	text-align: center;
 }
 
@@ -211,6 +209,14 @@ body {
 	text-align: center;
 }
 
+.field {
+	background-color: #f2f2f2;
+	padding: 12px 20px;
+	width: 452px;
+	border: none;
+	border-radius: 4px;
+}
+
 .button-sign-up {
 	font-family: "PT Sans", sans-serif;
 	font-size: 20px;
@@ -218,8 +224,8 @@ body {
 	color: #ffffff;
 	background-color: #82b3d3;
 	font-weight: 700;
-	width: 232px;
-	height: 52px;
+	padding: 8px 50px;
+	border: none;
 }
 
 .footer-social-list {
@@ -227,7 +233,6 @@ body {
 }
 
 .footer-contact-address {
-
 	text-align: center;
 	font-style: normal;
 }
@@ -253,13 +258,16 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: top;
-	height: 415px;
 }
 
 .inner-header-title {
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 78px;
+}
+
+.hotel-sorting-filter-group {
+	border: none;
 }
 
 .hotel-sorting-breadcrumbs-link {
@@ -298,10 +306,18 @@ body {
 
 .button-apply {
 	background-color: #82b3d3;
+	padding: 8px 50px;
+	border: none;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .button-reset {
 	background-color: rgba(28, 28, 28, 0);
+	padding: 8px 50px;
+	border: none;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .catalog-title {
@@ -348,10 +364,9 @@ body {
 }
 
 .hotels-card-button-more {
-	width: 140px;
-	height: 36px;
 	font-size: 16px;
 	line-height: 20px;
+	padding: 8px 50px;
 }
 
 .hotels-card-price {
@@ -361,28 +376,28 @@ body {
 }
 
 .hotels-card-button-in-favourites {
-	width: 140px;
-	height: 36px;
 	background-color: #82b3d3;
 	font-size: 16px;
 	line-height: 20px;
+	padding: 8px 50px;
 }
 
 .hotels-card-button-added {
-	width: 140px;
-	height: 36px;
 	background-color: #7db54f;
 	font-size: 16px;
 	line-height: 20px;
+	padding: 8px 50px;
 }
 
 .hotels-card-rating {
 	font-size: 16px;
 	line-height: 20px;
 	background-color: #f2f2f2;
-	width: 140px;
-	height: 36px;
 	text-align: center;
+	border-radius: 4px;
+	padding: 8px 50px;
+	color: #000000;
+	font-weight: 400;
 }
 
 .pagination-item {
@@ -391,31 +406,38 @@ body {
 
 .pagination-link-current {
 	background-color: #f2f2f2;
-	width: 60px;
-	height: 60px;
-	border-radius: 4px;
 	color: #000000;
+	padding: 11px 19px 13px 18px;
+	font-size: 20px;
+	line-height: 36px;
+	width: 60px;
+	box-sizing: border-box;
 }
 
 .pagination-link {
-	font-family: "PT Sans", sans-serif;
 	font-size: 20px;
 	line-height: 36px;
-	color: #ffffff;
-	font-weight: 700;
-	text-align: center;
-	text-decoration: none;
 	background-color: #82b3d3;
+	padding: 11px 19px 13px 18px;
+	box-sizing: border-box;
 	width: 60px;
-	height: 60px;
-	border-radius: 4px;
+}
+
+.pagination-link-triplet {
+	font-size: 20px;
+	line-height: 36px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+	padding: 11px 19px 13px 18px;
+	width: 60px;
 }
 
 .catalog-subscription {
 	background-color: #ffffff;
 	color: #000000;
 	text-align: center;
-	height: 415px;
+	padding: 96px, 258px, 104px, 258px;
 }
 
 .catalog-subscription-title {
@@ -426,12 +448,6 @@ body {
 	text-transform: uppercase;
 }
 
-.field {
-	background-color: #f2f2f2;
-	width: 452px;
-	height: 52px;
-}
-
 .catalog-button-sign-up {
 	font-family: "PT Sans", sans-serif;
 	font-size: 20px;
@@ -439,6 +455,6 @@ body {
 	color: #ffffff;
 	background-color: #82b3d3;
 	font-weight: 700;
-	width: 232px;
-	height: 52px;
+	padding: 8px 50px;
+	border: none;
 }
