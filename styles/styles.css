@@ -419,7 +419,6 @@ img {
 	list-style-type: none;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
 	width: 1060px;
 	margin: 0 auto;
 	padding: 0;
