@@ -14,18 +14,34 @@
 	font-display: swap;
 }
 
+html {
+	height: 100%;
+}
+
 body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 	font-family: "PT Sans", sans-serif;
 	font-size: 22px;
 	line-height: 26px;
 	color: #242424;
-	background-color: #ffffff;
+	background-color: #f2f2f2;
+	outline: 5px solid #7db54f;
+	outline-offset: -5px;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
 	object-fit: contain;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	background-color: #ffffff;
 }
 
 .button {
@@ -49,8 +65,22 @@ img {
 	background: #ffffff;
 }
 
+.navigation {
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .navigation-list {
 	list-style-type: none;
+	width: 507px;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-user {
+	max-width: 268px;
+	margin-left: auto;
 }
 
 .navigation-link {
@@ -73,6 +103,10 @@ img {
 	padding: 8px 50px;
 }
 
+.main-container {
+	flex-grow: 1;
+}
+
 .greeting {
 	color: #ffffff;
 	background-image: url("../images/welcome-background.jpg");
@@ -84,8 +118,7 @@ img {
 
 .greeting-welcome-img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 	padding: 51px 371px 82px 371px;
 }
 
@@ -97,12 +130,17 @@ img {
 	line-height: 36px;
 }
 
-.advantages-list {
-	list-style-type: none;
-}
-
 .advantages-reasons {
 	text-align: center;
+}
+
+.advantages-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .advantages-title {
@@ -121,28 +159,40 @@ img {
 
 .advices-list {
 	list-style-type: none;
+	display: flex;
+
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .advantages-item-real-town {
 	color: #ffffff;
 	background-color: #82b3d3;
+	width: 1200px;
+	display: flex;
 }
 
 .advantages-item-small-area {
 	background-color: rgba(131, 179, 211, 0.12);
+	width: 400px;
 }
 
 .advantages-item-beautiful-road {
 	background-color: rgba(131, 179, 211, 0.2);
+	width: 400px;
 }
 
 .advantages-item-few-tourists {
 	background-color: rgba(131, 179, 211, 0.12);
+	width: 400px;
 }
 
 .advantages-item-devils-bridge {
 	color: #ffffff;
 	background-color: #82b3d3;
+	width: 1200px;
+	display: flex;
 }
 
 .advices-title {
@@ -161,18 +211,20 @@ img {
 
 .advices-item-housing {
 	background-color: rgba(131, 179, 211, 0.12);
+	width: 400px;
 }
 
 .advices-item-food {
 	background-color: #ffffff;
+	width: 400px;
 }
 
 .advices-item-souvenirs {
 	background-color: rgba(131, 179, 211, 0.12);
+	width: 400px;
 }
 
 .offer {
-	background-color: #ffffff;
 	text-align: center;
 }
 
@@ -234,13 +286,28 @@ img {
 	border: none;
 }
 
+.footer-container {
+	display: flex;
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.footer-social {
+	width: 142px;
+}
+
 .footer-social-list {
 	/*list-style-type: none;*/
+}
+
+.footer-contact {
+	width: 720px;
 }
 
 .footer-contact-address {
 	text-align: center;
 	font-style: normal;
+	margin-left: auto;
 }
 
 .footer-contact-address-phone {
@@ -249,6 +316,11 @@ img {
 	color: #000000;
 	text-decoration: none;
 	font-family: "PT Sans", sans-serif;
+}
+
+.footer-link {
+	width: 115px;
+	margin-left: auto;
 }
 
 /*Catalog*/
@@ -443,7 +515,10 @@ img {
 	background-color: #ffffff;
 	color: #000000;
 	text-align: center;
-	padding: 96px, 258px, 104px, 258px;
+	padding-top: 96px;
+	padding-right: 258px;
+	padding-bottom: 104px;
+	padding-left: 258px;
 }
 
 .catalog-subscription-title {
