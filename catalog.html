@@ -48,18 +48,18 @@
 		</header>
 		<main class="main-container main-inner">
 
-			<section class="hotel-sorting">
+			<section class="hotel-filtration">
 				<h1 class="inner-header-title">Гостиницы Седоны</h1>
-				<ul class="hotel-sorting-breadcrumbs-list">
-					<li class="hotel-sorting-breadcrumbs-item">
-						<a class="hotel-sorting-breadcrumbs-link" href="index.html">Главная</a>
+				<ul class="hotel-filtration-breadcrumbs-list">
+					<li class="hotel-filtration-breadcrumbs-item">
+						<a class="hotel-filtration-breadcrumbs-link" href="index.html">Главная</a>
 					</li>
-					<li class="hotel-sorting-breadcrumbs-item">
-						<a class="hotel-sorting-breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+					<li class="hotel-filtration-breadcrumbs-item">
+						<a class="hotel-filtration-breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
 					</li>
 				</ul>
-				<fieldset class="hotel-sorting-filter-group">
-					<legend class="hotel-sorting-filter-title">Инфраструктура:</legend>
+				<fieldset class="hotel-filtration-filter-group">
+					<legend class="hotel-filtration-filter-title">Инфраструктура:</legend>
 					<label class="control">
 						<input class="control-input" type="checkbox" name="type-of-services" value="pool" checked>
 						Бассейн
@@ -73,22 +73,22 @@
 						Wi-Fi
 					</label>
 				</fieldset>
-				<fieldset class="hotel-sorting-filter-group">
-					<legend class="hotel-sorting-filter-title">Тип Жилья:</legend>
-					<ul class="hotel-sorting-filter-list">
-						<li class="hotel-sorting-filter-item">
+				<fieldset class="hotel-filtration-filter-group">
+					<legend class="hotel-filtration-filter-title">Тип Жилья:</legend>
+					<ul class="hotel-filtration-filter-list">
+						<li class="hotel-filtration-filter-item">
 							<label class="control">
 								<input class="control-input" type="radio" name="type-of-housing" value="hotels" checked>
 								Гостиница
 							</label>
 						</li>
-						<li class="hotel-sorting-filter-item">
+						<li class="hotel-filtration-filter-item">
 							<label class="control">
 								<input class="control-input" type="radio" name="type-of-housing" value="motel">
 								Мотель
 							</label>
 						</li>
-						<li class="hotel-sorting-filter-item">
+						<li class="hotel-filtration-filter-item">
 							<label class="control">
 								<input class="control-input" type="radio" name="type-of-housing" value="apartments">
 								Апартаменты
@@ -97,9 +97,9 @@
 					</ul>
 				</fieldset>
 
-				<fieldset class="hotel-sorting-filter-group">
-					<legend class="hotel-sorting-filter-title">Стоимость, ₽:</legend>
-					<ul class="hotel-sorting-filter-list">
+				<fieldset class="hotel-filtration-filter-group">
+					<legend class="hotel-filtration-filter-title">Стоимость, ₽:</legend>
+					<ul class="hotel-filtration-filter-list">
 						<!--здесь должен быть бегунок-->
 					</ul>
 				</fieldset>
@@ -108,23 +108,24 @@
 			</section>
 
 			<section class="catalog">
-				<h2 class="catalog-title">Найдено гостиниц: 38</h2>
-				<select class="select-control" aria-label="Сортировка">
-					<option value="cheap">Сначала дешевые</option>
-					<option value="popular">Сначала популярные</option>
-					<option value="expensive">Сначала дорогие</option>
-				</select>
+				<div class="catalog-sorting">
+					<h2 class="catalog-title">Найдено гостиниц: 38</h2>
+					<select class="select-control" aria-label="Сортировка">
+						<option value="cheap">Сначала дешевые</option>
+						<option value="popular">Сначала популярные</option>
+						<option value="expensive">Сначала дорогие</option>
+					</select>
 
-				<a class="button-show" href="javascript:volid(0)">
-					<span class="visually-hidden">Показать карточки</span>
-				</a>
-				<a class="button-show" href="javascript:volid(0)">
-					<span class="visually-hidden">Показать одну карточку</span>
-				</a>
-				<a class="button-show" href="javascript:volid(0)">
-					<span class="visually-hidden">Показать список</span>
-				</a>
-
+					<a class="button-show" href="javascript:volid(0)">
+						<span class="visually-hidden">Показать карточки</span>
+					</a>
+					<a class="button-show" href="javascript:volid(0)">
+						<span class="visually-hidden">Показать одну карточку</span>
+					</a>
+					<a class="button-show" href="javascript:volid(0)">
+						<span class="visually-hidden">Показать список</span>
+					</a>
+				</div>
 				<ul class="hotels-list">
 					<li class="hotels-card">
 						<a class="hotels-card-link" href="javascript:volid(0)">
