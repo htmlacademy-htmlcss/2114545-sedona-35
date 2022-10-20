@@ -25,6 +25,7 @@
 					<li class="navigation-item">
 						<a class="navigation-link" href="catalog.html">Гостиницы</a>
 					</li>
+
 				</ul>
 
 				<ul class="navigation-list navigation-user">
@@ -65,10 +66,12 @@
 			</section>
 			<section class="advantages">
 				<ul class="advantages-list">
-
 					<li class="advantages-item advantages-item-real-town">
-						<h3 class="advantages-title">Настоящий городок</h3>
-						<p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+
+						<div class="advantages-list-container-real-town">
+							<h3 class="advantages-title">Настоящий городок</h3>
+							<p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+						</div>
 
 						<img class="advantages-list-img-building" src="images/true-city-photo.jpg" width="800" height="384" alt="Здание городка Седона на заднем плане, растительность - на переднем.">
 					</li>
@@ -90,9 +93,13 @@
 						<p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
 					</li>
 					<li class="advantages-item advantages-item-devils-bridge">
-						<h3 class="advantages-title">Там есть мост дьявола</h3>
-						<p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-						<img class="advantages-list-img-bridge" src="images/devils-bridge-photo.jpg" width="800" height="384" alt="Мост дьявола">
+
+						<div class="advantages-list-container-devils-bridge">
+							<h3 class="advantages-title">Там есть мост дьявола</h3>
+							<p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+						</div>
+
+						<img class="advantages-list-img-bridge" src="images/devils-bridge-photo.jpg" width="800" height="384" alt="Мост дьявола.">
 					</li>
 				</ul>
 			</section>
@@ -102,17 +109,26 @@
 				<ul class="advices-list">
 					<li class="advices-item advices-item-housing">
 						<h3 class="advices-title">Жильё</h3>
-						<p class="advices-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+						<p class="advices-description">Рекомендуем пожить
+							<br>в настоящем мотеле,
+							<br>всё как в кино!
+						</p>
 					</li>
 
 					<li class="advices-item advices-item-food">
 						<h3 class="advices-title">Еда</h3>
-						<p class="advices-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+						<p class="advices-description">Всегда заказывайте
+							<br>топовый фирменный бургер,
+							<br>вы не разочаруетесь!
+						</p>
 					</li>
 
 					<li class="advices-item advices-item-souvenirs">
 						<h3 class="advices-title">Сувениры</h3>
-						<p class="advices-description">Не только китайского, но и настоящего местного производства!</p>
+						<p class="advices-description">Не только китайского,
+							<br> но и настоящего местного
+							<br> производства!
+						</p>
 					</li>
 				</ul>
 			</section>
@@ -132,7 +148,7 @@
 				<form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
 
 					<input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
-					<button class="button button-sign-up" type="submit">Подписаться</button>
+					<button class="button subscription-button-sign-up" type="submit">Подписаться</button>
 				</form>
 			</section>
 		</main>
@@ -143,24 +159,23 @@
 					<h3 class="visually-hidden">Соцсети</h3>
 					<ul class="footer-social-list">
 						<li class="footer-social-item">
-							<a class="button button-vkontakte" href="https://vk.com/htmlacademy">
+							<a class="footer-link button-vkontakte" href="https://vk.com/htmlacademy">
 								<span class="visually-hidden">ВКонтакте</span>
 							</a>
 
 						</li>
 						<li class="footer-social-item">
-							<a class="button button-telegram" href="https://t.me/htmlacademy">
+							<a class="footer-link button-telegram" href="https://t.me/htmlacademy">
 								<span class="visually-hidden">Телеграм</span>
 							</a>
 						</li>
 						<li class="footer-social-item">
-							<a class="button button-youtube" href="https://www.youtube.come/user/htmlacademyru">
+							<a class="footer-link button-youtube" href="https://www.youtube.come/user/htmlacademyru">
 								<span class="visually-hidden">Youtube</span>
 							</a>
 						</li>
 					</ul>
 				</section>
-
 				<section class="footer-contact">
 					<h3 class="visually-hidden">Контактный номер</h3>
 					<address class="footer-contact-address">
