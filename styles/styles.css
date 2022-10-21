@@ -290,6 +290,7 @@ img {
 
 .offer {
 	text-align: center;
+	padding-top: 96px;
 }
 
 .offer-title {
@@ -298,7 +299,6 @@ img {
 	line-height: 36px;
 	text-transform: uppercase;
 	margin: 0;
-	padding-top: 96px;
 	padding-right: 451px;
 	padding-bottom: 20px;
 	padding-left: 451px;
@@ -332,6 +332,8 @@ img {
 	background-size: 100% auto;
 	background-position: top;
 	text-align: center;
+	padding-top: 96px;
+	padding-bottom: 104px;
 }
 
 .subscription-title {
@@ -341,7 +343,6 @@ img {
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
-	margin-top: 96px;
 	margin-right: 398px;
 	margin-bottom: 20px;
 	margin-left: 398px;
@@ -357,21 +358,22 @@ img {
 }
 
 .field {
+	font-family: "PT Sans", sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
 	background-color: #f2f2f2;
-	min-width: 452px;
 	border: none;
 	border-radius: 4px;
 	height: 52px;
+	width: 452px;
+	padding-left: 20px;
 }
 
 .subscription-form {
 	display: flex;
-	min-width: 684px;
-	min-height: 52px;
 	margin: 0;
-	margin-right: 258px;
-	margin-bottom: 104px;
-	margin-left: 258px;
+	justify-content: center;
 }
 
 .subscription-button-sign-up {
@@ -387,8 +389,6 @@ img {
 	padding-left: 50px;
 	border: none;
 	margin: 0;
-	margin-right: 258px;
-	margin-bottom: 104;
 }
 
 .footer-container {
@@ -471,14 +471,18 @@ img {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: top;
+	padding-top: 35px;
+	padding-bottom: 70px;
 }
 
 .hotel-filtration-title {
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 78px;
-	margin-top: 0;
+	margin: 0;
+	margin-right: 636px;
 	margin-bottom: 8px;
+	margin-left: 70px;
 }
 
 .hotel-filtration-breadcrumbs-link {
@@ -507,7 +511,7 @@ img {
 	margin-left: 70px;
 }
 
-.hotel-filtration-filter-group {
+.hotel-filtration-form {
 	display: flex;
 }
 
@@ -528,12 +532,22 @@ img {
 	line-height: 23px;
 }
 
+.hotel-filtration-buttons {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-top: 56px;
+	margin-left: 70px;
+}
+
 .button-apply {
 	background-color: #82b3d3;
 	padding: 8px 50px;
 	border: none;
 	font-size: 16px;
 	line-height: 20px;
+	margin: 0;
+	margin-bottom: 32px;
 }
 
 .button-reset {
@@ -542,14 +556,15 @@ img {
 	border: none;
 	font-size: 16px;
 	line-height: 20px;
+	margin: 0;
 }
 
 .catalog-sorting {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 50px;
+	padding-top: 50px;
 	margin-right: 70px;
-	margin-bottom: 40px;
+	padding-bottom: 40px;
 	margin-left: 70px;
 }
 
@@ -710,6 +725,8 @@ img {
 	background-color: #ffffff;
 	color: #000000;
 	text-align: center;
+	padding-top: 96px;
+	padding-bottom: 104px;
 }
 
 .catalog-subscription-title {
@@ -719,7 +736,6 @@ img {
 	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
-	margin-top: 96px;
 	margin-right: 398px;
 	margin-bottom: 20px;
 	margin-left: 398px;
@@ -734,11 +750,8 @@ img {
 
 .catalog-subscription-form {
 	display: flex;
-	min-width: 452px;
-	min-height: 52px;
+	justify-content: center;
 	margin: 0;
-	margin-left: 258px;
-	margin-bottom: 104px;
 }
 
 .catalog-button-sign-up {
@@ -754,6 +767,4 @@ img {
 	padding-left: 50px;
 	border: none;
 	margin: 0;
-	margin-right: 258px;
-	margin-bottom: 104px;
 }

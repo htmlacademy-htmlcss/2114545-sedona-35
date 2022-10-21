@@ -58,53 +58,60 @@
 						<a class="hotel-filtration-breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
 					</li>
 				</ul>
-				<fieldset class="hotel-filtration-filter-group">
-					<legend class="hotel-filtration-filter-title">Инфраструктура:</legend>
-					<label class="control">
-						<input class="control-input" type="checkbox" name="type-of-services" value="pool" checked>
-						Бассейн
-					</label>
-					<label class="control">
-						<input class="control-input" type="checkbox" name="type-of-services" value="parking" checked>
-						Парковка
-					</label>
-					<label class="control">
-						<input class="control-input" type="checkbox" name="type-of-services" value="Wi-Fi">
-						Wi-Fi
-					</label>
-				</fieldset>
-				<fieldset class="hotel-filtration-filter-group">
-					<legend class="hotel-filtration-filter-title">Тип Жилья:</legend>
-					<ul class="hotel-filtration-filter-list">
-						<li class="hotel-filtration-filter-item">
-							<label class="control">
-								<input class="control-input" type="radio" name="type-of-housing" value="hotels" checked>
-								Гостиница
-							</label>
-						</li>
-						<li class="hotel-filtration-filter-item">
-							<label class="control">
-								<input class="control-input" type="radio" name="type-of-housing" value="motel">
-								Мотель
-							</label>
-						</li>
-						<li class="hotel-filtration-filter-item">
-							<label class="control">
-								<input class="control-input" type="radio" name="type-of-housing" value="apartments">
-								Апартаменты
-							</label>
-						</li>
-					</ul>
-				</fieldset>
 
-				<fieldset class="hotel-filtration-filter-group">
-					<legend class="hotel-filtration-filter-title">Стоимость, ₽:</legend>
-					<ul class="hotel-filtration-filter-list">
-						<!--здесь должен быть бегунок-->
-					</ul>
-				</fieldset>
-				<button class="button button-apply" type="submit">Применить</button>
-				<button class="button button-reset" type="reset">Сбросить</button>
+				<form class="hotel-filtration-form" action="https://echo.htmlacademy.ru/" method="post">
+					<fieldset class="hotel-filtration-filter-group">
+						<legend class="hotel-filtration-filter-title">Инфраструктура:</legend>
+						<label class="control">
+							<input class="control-input" type="checkbox" name="type-of-services" value="pool" checked>
+							Бассейн
+						</label>
+						<label class="control">
+							<input class="control-input" type="checkbox" name="type-of-services" value="parking" checked>
+							Парковка
+						</label>
+						<label class="control">
+							<input class="control-input" type="checkbox" name="type-of-services" value="Wi-Fi">
+							Wi-Fi
+						</label>
+					</fieldset>
+
+					<fieldset class="hotel-filtration-filter-group">
+						<legend class="hotel-filtration-filter-title">Тип Жилья:</legend>
+						<ul class="hotel-filtration-filter-list">
+							<li class="hotel-filtration-filter-item">
+								<label class="control">
+									<input class="control-input" type="radio" name="type-of-housing" value="hotels" checked>
+									Гостиница
+								</label>
+							</li>
+							<li class="hotel-filtration-filter-item">
+								<label class="control">
+									<input class="control-input" type="radio" name="type-of-housing" value="motel">
+									Мотель
+								</label>
+							</li>
+							<li class="hotel-filtration-filter-item">
+								<label class="control">
+									<input class="control-input" type="radio" name="type-of-housing" value="apartments">
+									Апартаменты
+								</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset class="hotel-filtration-filter-group">
+						<legend class="hotel-filtration-filter-title">Стоимость, ₽:</legend>
+						<ul class="hotel-filtration-filter-list">
+							<!--здесь должен быть бегунок-->
+						</ul>
+					</fieldset>
+					<div class="hotel-filtration-buttons">
+						<button class="button button-apply" type="submit">Применить</button>
+						<button class="button button-reset" type="reset">Сбросить</button>
+					</div>
+				</form>
+
 			</section>
 
 			<section class="catalog">
