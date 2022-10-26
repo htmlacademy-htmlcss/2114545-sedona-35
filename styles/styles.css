@@ -173,6 +173,8 @@ img {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .advantages-item {
@@ -203,15 +205,14 @@ img {
 	margin: 30px auto;
 	width: 60px;
 	height: 2px;
-	opacity: 0, 3;
-	background-color: currentсolor;
+	opacity: 0.3;
+	background-color: currentcolor;
 }
 
 .advantages-description {
 	text-align: center;
 	font-size: 18px;
 	line-height: 21px;
-	margin: 0;
 }
 
 .advantages-list-image {
@@ -230,12 +231,9 @@ img {
 .advantages-item-illustrated {
 	color: #ffffff;
 	background-color: #82b3d3;
+	grid-column-end: span 3;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-}
-
-.advantages-item-between {
-	width: 400px;
 }
 
 .advices-list {
@@ -256,40 +254,30 @@ img {
 	font-size: 24px;
 	line-height: 28px;
 	text-align: center;
-	margin: 0;
-	/*сверху будет декоратичное изображение*/
-	padding-right: 85px;
-	padding-bottom: 30px;
-	padding-left: 85px;
 }
 
 .advices-description {
 	text-align: center;
 	font-size: 18px;
 	line-height: 21px;
-	margin: 0;
+}
+
+.advices-item {
 	padding-right: 85px;
-	padding-bottom: 81px;
+	padding-bottom: 63px;
 	padding-left: 85px;
 }
 
-.advaces-item {
-	min-height: 384px;
-}
-
-.advices-item-housing {
+.advices-item:where(:nth-child(2n+1)) {
 	background-color: rgba(131, 179, 211, 0.12);
-	width: 400px;
 }
 
-.advices-item-food {
+.advices-item:where(:nth-child(2n+2)) {
 	background-color: #ffffff;
-	width: 400px;
 }
 
-.advices-item-souvenirs {
-	background-color: rgba(131, 179, 211, 0.12);
-	width: 400px;
+.advantages-item-illustrated:nth-of-type(5) .advantages-list-image {
+	order: -1;
 }
 
 .offer {
