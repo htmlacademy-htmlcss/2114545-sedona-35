@@ -77,9 +77,12 @@ img {
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 	width: 407px;
 	/*ширина с запасом*/
+}
+
+.navigation-item::marker {
+	color: transparent;
 }
 
 .navigation-link {
@@ -394,7 +397,6 @@ img {
 }
 
 .footer-social-list {
-	/*list-style-type: none;*/
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
@@ -409,6 +411,10 @@ img {
 	min-width: 47px;
 	min-height: 40px;
 }
+
+/*.footer-social-item::marker {
+	color: transparent;
+}*/
 
 .footer-link {
 	font-family: "PT Sans", sans-serif;
@@ -490,14 +496,16 @@ img {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
-	list-style-type: none;
+}
+
+.hotel-filtration-breadcrumbs-item::marker {
+	color: transparent;
 }
 
 .hotel-filtration-breadcrumbs-list {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
 	padding-right: 1016;
 	padding-bottom: 40px;
 	padding-left: 70px;
@@ -511,10 +519,6 @@ img {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
-}
-
-.hotel-filtration-filter-list {
-	list-style-type: none;
 }
 
 .control-input {
@@ -588,7 +592,6 @@ img {
 }
 
 .hotels-list {
-	list-style-type: none;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px 20px;
@@ -598,7 +601,8 @@ img {
 }
 
 .hotels-card {
-	width: 340px;
+	display: flex;
+	flex-direction: column;
 }
 
 .hotels-card-link {
@@ -615,12 +619,21 @@ img {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
-	margin: 0;
+	order: 1;
 }
 
 .hotels-card-image {
 	width: 300px;
 	height: 212px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.hotels-card-content {
+	display: grid;
+	grid-template-columns: 140px 140px;
+	column-gap: 20px;
+	row-gap: 16px;
 	padding-right: 20px;
 	padding-left: 20px;
 }
@@ -634,7 +647,8 @@ img {
 .hotels-card-button-more {
 	font-size: 16px;
 	line-height: 20px;
-	padding: 8px 50px;
+	padding: 8px 26px;
+	box-sizing: border-box;
 }
 
 .hotels-card-price {
@@ -647,36 +661,41 @@ img {
 	background-color: #82b3d3;
 	font-size: 16px;
 	line-height: 20px;
-	padding: 8px 50px;
+	padding: 8px 26px;
+	box-sizing: border-box;
 }
 
 .hotels-card-button-added {
 	background-color: #7db54f;
 	font-size: 16px;
 	line-height: 20px;
-	padding: 8px 50px;
+	padding: 8px 26px;
+	box-sizing: border-box;
 }
 
 .hotels-card-rating {
 	font-size: 16px;
 	line-height: 20px;
 	background-color: #f2f2f2;
-	text-align: center;
 	border-radius: 4px;
-	padding: 8px 50px;
+	padding: 8px 26px;
 	color: #000000;
 	font-weight: 400;
+	box-sizing: border-box;
 }
 
 .pagination {
 	display: flex;
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	padding-top: 40px;
 	padding-right: 70px;
 	padding-bottom: 60px;
 	padding-left: 70px;
+}
+
+.pagination-item::marker {
+	color: transparent;
 }
 
 .pagination-item {
