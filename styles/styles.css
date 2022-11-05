@@ -115,8 +115,7 @@ img {
 }
 
 .button-clear:focus {
-	outline: none;
-	border: 3px solid #83b3d3;
+	outline: 3px solid #83b3d3;
 }
 
 .button-clear:disabled {
@@ -177,14 +176,18 @@ img {
 	font-weight: 700;
 	text-align: center;
 	text-decoration: none;
+	position: relative;
 }
 
 .navigation-link-current::after {
-	position: absolute;
-	bottom: 0;
-	height: 2px;
-	background-color: #756257;
 	content: "";
+	position: absolute;
+	z-index: 2;
+	height: 2px;
+	left: 20px;
+	right: 20px;
+	bottom: -7px;
+	background-color: #756257;
 }
 
 .navigation-logo {
@@ -202,6 +205,28 @@ img {
 .navigation-user .navigation-link {
 	min-width: 20px;
 	min-height: 20px;
+}
+
+.navigation-icon-search::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../icons/search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.navigation-icon-heart::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../icons/heart.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 .navigation-link-want {
@@ -493,24 +518,37 @@ img {
 	height: 40px;
 }
 
-.footer-button-vkontakte {
-	size: 24px 24px;
+.footer-button-vkontakte::before {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 14px;
+	background-image: url("../icons/vkontakte.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
-.footer-button-vkontakte:hover {
-	color: #68c2ca;
+.footer-button-telegram::before {
+	content: "";
+	display: block;
+	width: 18px;
+	height: 15px;
+	background-image: url("../icons/telegram.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
-.footer-button-vkontakte:focus {
-	color: #68c2ca;
-}
-
-.footer-button-telegram {
-	size: 18px 15px;
-}
-
-.footer-button-youtube {
-	size: 22px 17px;
+.footer-button-youtube::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 17px;
+	background-image: url("../icons/youtube.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 .footer-contact {
@@ -551,6 +589,17 @@ img {
 	padding-top: 48px;
 	padding-right: 70px;
 	padding-bottom: 39px;
+}
+
+.htmlacademy-link::before {
+	content: "";
+	display: block;
+	width: 115px;
+	height: 33px;
+	background-image: url("../icons/logo-htmlacademy.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 
 /*Catalog*/
@@ -663,6 +712,7 @@ img {
 	padding-right: 70px;
 	padding-bottom: 40px;
 	padding-left: 70px;
+	column-gap: 70px;
 }
 
 .catalog-title {
@@ -671,6 +721,8 @@ img {
 	line-height: 36px;
 	text-transform: uppercase;
 	margin: 0;
+	margin-right: auto;
+	align-self: center;
 }
 
 .select-control {
@@ -680,11 +732,9 @@ img {
 	border: 2px solid #e5e5e5;
 	border-radius: 4px;
 	padding-top: 14px;
-	padding-right: 131px;
+	padding-right: 99px;
 	padding-bottom: 14px;
 	padding-left: 20px;
-	margin-right: 70px;
-	margin-left: 200px;
 }
 
 .select-control:hover {
@@ -809,6 +859,10 @@ img {
 	line-height: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
+}
+
+.rating-stars {
+	background-image: url("../icons/star.svg");
 }
 
 .hotels-card-rating {
