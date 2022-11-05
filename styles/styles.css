@@ -53,6 +53,82 @@ img {
 	cursor: pointer;
 }
 
+.button-brown:hover {
+	background-color: #615048;
+}
+
+.button-brown:focus {
+	background-color: #615048;
+	outline: none;
+}
+
+.button-brown:disabled {
+	background-color: #e5e5e5;
+}
+
+.button-brown:disabled:hover {
+	background-color: #e5e5e5;
+	outline: none;
+	cursor: default;
+}
+
+.button-blue:hover {
+	background-color: #68a2ca;
+}
+
+.button-blue:focus {
+	background-color: #68a2ca;
+	outline: none;
+}
+
+.button-blue:disabled {
+	background-color: #e5e5e5;
+}
+
+.button-blue:disabled:hover {
+	background-color: #e5e5e5;
+	outline: none;
+	cursor: default;
+}
+
+.button-green:hover {
+	background-color: #6c9e42;
+}
+
+.button-green:focus {
+	background-color: #6c9e42;
+	outline: none;
+}
+
+.button-green:disabled {
+	background-color: #6c9e42;
+}
+
+.button-green:disabled:hover {
+	background-color: #e5e5e5;
+	outline: none;
+	cursor: default;
+}
+
+.button-clear:hover {
+	opacity: 60%;
+}
+
+.button-clear:focus {
+	outline: none;
+	border: 3px solid #83b3d3;
+}
+
+.button-clear:disabled {
+	opacity: 10%;
+}
+
+.button-clear:disabled:hover {
+	opacity: 10%;
+	outline: none;
+	cursor: default;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -101,6 +177,14 @@ img {
 	font-weight: 700;
 	text-align: center;
 	text-decoration: none;
+}
+
+.navigation-link-current::after {
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background-color: #756257;
+	content: "";
 }
 
 .navigation-logo {
@@ -390,34 +474,43 @@ img {
 
 .footer-container {
 	display: flex;
-	width: 1060px;
-	margin: 0;
+	align-items: center;
 }
 
 .footer-social-list {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.footer-social-item {
-	min-width: 47px;
-	min-height: 40px;
+	max-width: 142px;
 }
 
 .footer-social-item::marker {
 	color: transparent;
 }
 
-.footer-link {
-	font-family: "PT Sans", sans-serif;
-	color: #000000;
-	font-weight: 400;
-	text-align: center;
-	text-decoration: none;
+.footer-social-link {
+	display: block;
+	width: 47px;
+	height: 40px;
 }
 
-.footer-social-icon {
-	fill: #83b3d3;
+.footer-button-vkontakte {
+	size: 24px 24px;
+}
+
+.footer-button-vkontakte:hover {
+	color: #68c2ca;
+}
+
+.footer-button-vkontakte:focus {
+	color: #68c2ca;
+}
+
+.footer-button-telegram {
+	size: 18px 15px;
+}
+
+.footer-button-youtube {
+	size: 22px 17px;
 }
 
 .footer-contact {
@@ -443,12 +536,21 @@ img {
 	font-family: "PT Sans", sans-serif;
 }
 
-.htmlacademy-link {
-	margin: 0;
+.footer-contact-address-phone:hover {
+	color: #756157;
+}
+
+.footer-contact-address-phone:focus {
+	outline: none;
+	color: #756157;
+}
+
+.footer-link {
+	width: 115px;
+	height: 33px;
 	padding-top: 48px;
 	padding-right: 70px;
 	padding-bottom: 39px;
-	padding-left: 42px;
 }
 
 /*Catalog*/
@@ -502,7 +604,6 @@ img {
 	display: flex;
 	margin: 0;
 	padding: 0;
-	padding-right: 1016;
 	padding-bottom: 40px;
 	padding-left: 70px;
 }
@@ -558,7 +659,6 @@ img {
 .catalog-sorting {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	padding-top: 50px;
 	padding-right: 70px;
 	padding-bottom: 40px;
@@ -571,34 +671,41 @@ img {
 	line-height: 36px;
 	text-transform: uppercase;
 	margin: 0;
-	padding-top: 6px;
-	padding-right: 200px;
-	padding-bottom: 6px;
-}
-
-.catalog-view-button {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 8px;
-}
-
-.catalog-link {
-	font-family: "PT Sans", sans-serif;
-	color: #000000;
-	font-weight: 400;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 4px;
-	border: 2px solid #e5e5e5;
-	min-width: 48px;
 }
 
 .select-control {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 21px;
-	margin: 0;
+	border: 2px solid #e5e5e5;
+	border-radius: 4px;
+	padding-top: 14px;
+	padding-right: 131px;
+	padding-bottom: 14px;
+	padding-left: 20px;
 	margin-right: 70px;
+	margin-left: 200px;
+}
+
+.select-control:hover {
+	border: 2px solid #68a2ca;
+}
+
+.catalog-view-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.catalog-view-button {
+	padding: 17px 16px;
+}
+
+.catalog-link {
+	font-family: "PT Sans", sans-serif;
+	border-radius: 4px;
+	border: 2px solid #e5e5e5;
+	min-width: 48px;
 }
 
 .hotels-list {
