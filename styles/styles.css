@@ -50,6 +50,7 @@ img {
 	border: none;
 	display: inline-block;
 	line-height: 20px;
+	cursor: pointer;
 }
 
 .visually-hidden {
@@ -393,19 +394,9 @@ img {
 	margin: 0;
 }
 
-.footer-social {
-	min-width: 142px;
-}
-
 .footer-social-list {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
-	padding-top: 45px;
-	padding-right: 41px;
-	padding-bottom: 35px;
-	padding-left: 70px;
 }
 
 .footer-social-item {
@@ -413,9 +404,9 @@ img {
 	min-height: 40px;
 }
 
-/*.footer-social-item::marker {
+.footer-social-item::marker {
 	color: transparent;
-}*/
+}
 
 .footer-link {
 	font-family: "PT Sans", sans-serif;
@@ -423,6 +414,10 @@ img {
 	font-weight: 400;
 	text-align: center;
 	text-decoration: none;
+}
+
+.footer-social-icon {
+	fill: #83b3d3;
 }
 
 .footer-contact {
@@ -522,6 +517,15 @@ img {
 	line-height: 24px;
 }
 
+.hotel-filtration-filter-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.hotel-filtration-filter-item::marker {
+	color: transparent;
+}
+
 .control-input {
 	font-family: inherit;
 	font-weight: 400;
@@ -540,6 +544,7 @@ img {
 	background-color: #82b3d3;
 	padding: 8px 50px;
 	font-size: 16px;
+	line-height: 26px;
 	margin-bottom: 32px;
 }
 
@@ -547,6 +552,7 @@ img {
 	background-color: rgba(28, 28, 28, 0);
 	padding: 8px 50px;
 	font-size: 16px;
+	line-height: 26px;
 }
 
 .catalog-sorting {
@@ -673,12 +679,11 @@ img {
 	border-radius: 4px;
 	border: none;
 	display: inline-block;
-	line-height: 20px;
 }
-
 
 .hotels-card-button-more {
 	font-size: 16px;
+	line-height: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
@@ -686,6 +691,7 @@ img {
 .hotels-card-button-in-favourites {
 	background-color: #82b3d3;
 	font-size: 16px;
+	line-height: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
@@ -693,12 +699,14 @@ img {
 .hotels-card-button-added {
 	background-color: #7db54f;
 	font-size: 16px;
+	line-height: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
 
 .hotels-card-rating {
 	font-size: 16px;
+	line-height: 20px;
 	background-color: #f2f2f2;
 	padding-top: 8px;
 	padding-bottom: 8px;
