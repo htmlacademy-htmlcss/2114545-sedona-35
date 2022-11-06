@@ -53,13 +53,9 @@
 			<section class="hotel-filtration">
 				<h1 class="hotel-filtration-title">Гостиницы Седоны</h1>
 				<ul class="hotel-filtration-breadcrumbs-list">
-					<li class="hotel-filtration-breadcrumbs-item">
-						<a class="hotel-filtration-breadcrumbs-link-home" href="index.html"></a>
+					<li class="hotel-filtration-breadcrumbs-item hotel-filtration-icon-home ">
+						<a class="hotel-filtration-breadcrumbs-link" href="index.html"></a>
 						<span class="visually-hidden">Главная</span>
-						<svg class="hotel-filtration-breadcrumbs-home" aria-hidden="true" focusable="false" width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg">
-							<path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" fill="#fff" />
-							<path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" fill="#fff" />
-						</svg>
 					</li>
 					<li class="hotel-filtration-breadcrumbs-item">
 						<a class="hotel-filtration-breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
@@ -131,57 +127,16 @@
 					</select>
 
 					<div class="catalog-view-buttons">
-						<a class="catalog-link" href="javascript:volid(0)">
+						<a class="catalog-link catalog-view-button catalog-view-button-cards" href="javascript:volid(0)">
 							<span class="visually-hidden">Показать карточки</span>
-							<svg class="catalog-view-button" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g clip-path="url(#clip0_65253_462)">
-									<path d="M4 0H0V6H4V0Z" fill="black" />
-									<path d="M16 0H12V6H16V0Z" fill="black" />
-									<path d="M10 0H6V6H10V0Z" fill="black" />
-									<path d="M4 8H0V14H4V8Z" fill="black" />
-									<path d="M16 8H12V14H16V8Z" fill="black" />
-									<path d="M10 8H6V14H10V8Z" fill="black" />
-								</g>
-								<defs>
-									<clipPath id="clip0_65253_462">
-										<rect width="16" height="14" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
 						</a>
-						<a class="catalog-link" href="javascript:volid(0)">
+
+						<a class="catalog-link catalog-view-button catalog-view-button-card" href="javascript:volid(0)">
 							<span class="visually-hidden">Показать одну карточку</span>
-							<svg class="catalog-view-button" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g clip-path="url(#clip0_65253_465)">
-									<path d="M16 12H0V14H16V12Z" fill="black" />
-									<path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-								</g>
-								<defs>
-									<clipPath id="clip0_65253_465">
-										<rect width="16" height="14" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
 						</a>
-						<a class="catalog-link" href="javascript:volid(0)">
+
+						<a class="catalog-link catalog-view-button catalog-view-button-list" href="javascript:volid(0)">
 							<span class="visually-hidden">Показать список</span>
-							<svg class="catalog-view-button" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<g clip-path="url(#clip0_65253_469)">
-									<path d="M2 0H0V2H2V0Z" fill="black" />
-									<path d="M16 0H4V2H16V0Z" fill="black" />
-									<path d="M2 4H0V6H2V4Z" fill="black" />
-									<path d="M16 4H4V6H16V4Z" fill="black" />
-									<path d="M2 8H0V10H2V8Z" fill="black" />
-									<path d="M16 8H4V10H16V8Z" fill="black" />
-									<path d="M2 12H0V14H2V12Z" fill="black" />
-									<path d="M16 12H4V14H16V12Z" fill="black" />
-								</g>
-								<defs>
-									<clipPath id="clip0_65253_469">
-										<rect width="16" height="14" fill="white" />
-									</clipPath>
-								</defs>
-							</svg>
 						</a>
 					</div>
 				</div>
@@ -196,8 +151,10 @@
 							<span class="hotels-card-price">От 4000 ₽</span>
 							<a class="hotels-card-button-more button button-brown" href="javascript:volid(0)">подробнее</a>
 							<a class="hotels-card-button-in-favourites button button-blue" href="javascript:volid(0)">в избранное</a>
-							<span class="visually-hidden">Рейтинг гостиницы</span>
-							<p class="rating-stars"></p>
+							<div class="hotel-stars hotel-stars-4">
+								<span class="visually-hidden">Четыре звезды</span>
+							</div>
+
 							<p class="hotels-button hotels-card-rating">РЕЙТИНГ: 6,9</p>
 						</div>
 					</li>
@@ -211,8 +168,9 @@
 							<span class="hotels-card-price">От 5000 ₽</span>
 							<a class="hotels-card-button-more button button-brown" href="javascript:volid(0)">подробнее</a>
 							<a class="hotels-card-button-added button button-green" href="javascript:volid(0)">в избранном</a>
-							<span class="visually-hidden">Рейтинг гостиницы</span>
-							<p class="rating-stars"></p>
+							<div class="hotel-stars hotel-stars-4">
+								<span class="visually-hidden">Четыре звезды</span>
+							</div>
 							<p class="hotels-button hotels-card-rating">РЕЙТИНГ: 6,9</p>
 						</div>
 					</li>
@@ -226,8 +184,9 @@
 							<span class="hotels-card-price">От 2500 ₽</span>
 							<a class="hotels-card-button-more button button-brown" href="javascript:volid(0)">подробнее</a>
 							<a class="hotels-card-button-in-favourites button button-blue" href="javascript:volid(0)">в избранное</a>
-							<span class="visually-hidden">Рейтинг гостиницы</span>
-							<p class="rating-stars"></p>
+							<div class="hotel-stars hotel-stars-3">
+								<span class="visually-hidden">Три звезды</span>
+							</div>
 							<p class="hotels-button hotels-card-rating">РЕЙТИНГ: 6,9</p>
 						</div>
 					</li>
@@ -241,8 +200,9 @@
 							<span class="hotels-card-price">От 1500 ₽</span>
 							<a class="hotels-card-button-more button button-brown" href="javascript:volid(0)">подробнее</a>
 							<a class="hotels-card-button-in-favourites button button-blue" href="javascript:volid(0)">в избранное</a>
-							<span class="visually-hidden">Рейтинг гостиницы</span>
-							<p class="rating-stars"></p>
+							<div class="hotel-stars hotel-stars-2">
+								<span class="visually-hidden">Две звезды</span>
+							</div>
 							<p class="hotels-button hotels-card-rating">РЕЙТИНГ: 6,9</p>
 						</div>
 					</li>
