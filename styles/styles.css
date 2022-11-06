@@ -762,6 +762,7 @@ img {
 
 .hotel-filtration-breadcrumbs-list {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	padding-bottom: 40px;
@@ -781,16 +782,13 @@ img {
 	color: transparent;
 }
 
-.hotel-filtration-icon-home::after {
+.hotel-filtration-breadcrumbs-item:not(:last-child)::after {
 	content: "";
 	display: block;
+	margin-inline: 10px;
 	width: 8px;
 	height: 20px;
-	background-image: url("../icons/bradcrumbs-arrow.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	margin-right: 10px;
+	background: url("../icons/bradcrumbs-arrow.svg") no-repeat center / 100%;
 }
 
 .hotel-filtration-icon-home::before {
