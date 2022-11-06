@@ -230,10 +230,18 @@ img {
 }
 
 .navigation-icon-number {
-	position: absolute;
 	color: #ffffff;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 10px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 4px;
 	background-color: #7db54f;
 	border-radius: 10px;
+	position: absolute;
+	top: 11px;
 }
 
 .navigation-link-want {
@@ -267,6 +275,16 @@ img {
 	padding-right: 371px;
 	padding-bottom: 82px;
 	padding-left: 371px;
+	position: relative;
+}
+
+.greeting-welcome-img::after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	height: 57px;
+	bottom: 60px;
+	background-image: url("../images/welcome-divider.svg");
 }
 
 .advantages-beginning-text {
@@ -403,7 +421,7 @@ img {
 	color: transparent;
 }
 
-.advices-icon-house::before {
+.advices-title-house::before {
 	content: "";
 	display: block;
 	width: 75px;
@@ -413,9 +431,11 @@ img {
 	background-position: center;
 	background-size: contain;
 	margin-inline: auto;
+	margin-top: 56px;
+	margin-bottom: 30px;
 }
 
-.advices-icon-food::before {
+.advices-title-food::before {
 	content: "";
 	display: block;
 	width: 74px;
@@ -425,9 +445,11 @@ img {
 	background-position: center;
 	background-size: contain;
 	margin-inline: auto;
+	margin-top: 56px;
+	margin-bottom: 30px;
 }
 
-.advices-icon-souvenirs::before {
+.advices-title-souvenirs::before {
 	content: "";
 	display: block;
 	width: 68px;
@@ -437,6 +459,8 @@ img {
 	background-position: center;
 	background-size: contain;
 	margin-inline: auto;
+	margin-top: 56px;
+	margin-bottom: 30px;
 }
 
 .advices-title {
