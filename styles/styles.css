@@ -266,6 +266,17 @@ img {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center;
+	position: relative;
+}
+
+.greeting::after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	height: 57px;
+	width: 100%;
+	bottom: 0;
+	background-image: url("../images/welcome-divider.svg");
 }
 
 .greeting-welcome-img {
@@ -275,16 +286,6 @@ img {
 	padding-right: 371px;
 	padding-bottom: 82px;
 	padding-left: 371px;
-	position: relative;
-}
-
-.greeting-welcome-img::after {
-	content: "";
-	position: absolute;
-	z-index: 2;
-	height: 57px;
-	bottom: 60px;
-	background-image: url("../images/welcome-divider.svg");
 }
 
 .advantages-beginning-text {
@@ -693,6 +694,12 @@ img {
 	padding-top: 48px;
 	padding-right: 70px;
 	padding-bottom: 39px;
+	color: #000000;
+}
+
+.htmlacademy-link {
+	color: #000000;
+	outline: none;
 }
 
 .htmlacademy-link::before {
@@ -700,10 +707,16 @@ img {
 	display: block;
 	width: 115px;
 	height: 33px;
-	background-image: url("../icons/logo-htmlacademy.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	mask: url("../icons/logo-htmlacademy.svg") no-repeat center / contain;
+	background: currentcolor;
+}
+
+.htmlacademy-link:hover::before {
+	color: #756157;
+}
+
+.htmlacademy-link:focus::before {
+	color: #756157;
 }
 
 /*Catalog*/
@@ -735,6 +748,10 @@ img {
 }
 
 .hotel-filtration-breadcrumbs-link {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5em;
 	font-size: 16px;
 	line-height: 21px;
 	color: #ffffff;
@@ -752,6 +769,9 @@ img {
 }
 
 .hotel-filtration-breadcrumbs-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
@@ -761,16 +781,27 @@ img {
 	color: transparent;
 }
 
+.hotel-filtration-icon-home::after {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 20px;
+	background-image: url("../icons/bradcrumbs-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-right: 10px;
+}
+
 .hotel-filtration-icon-home::before {
 	content: "";
 	display: block;
-	width: 12px;
-	height: 12px;
+	width: 13px;
+	height: 15px;
 	background-image: url("../icons/bradcrumbs-home.svg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	margin-right: 29px;
 }
 
 .hotel-filtration-form {
