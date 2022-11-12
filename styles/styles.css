@@ -253,21 +253,11 @@ img {
 
 .greeting {
 	color: #ffffff;
-	background-image: url("../images/welcome-background.jpg");
+	background-image: url("../images/welcome-divider.svg"), url("../images/welcome-background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: center;
+	background-position: bottom, center;
 	position: relative;
-}
-
-.greeting::after {
-	content: "";
-	position: absolute;
-	z-index: 2;
-	height: 57px;
-	width: 100%;
-	bottom: 0;
-	background-image: url("../images/welcome-divider.svg");
 }
 
 .greeting-welcome-img {
@@ -714,9 +704,9 @@ img {
 	background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*.modal-container-close {
+.modal-container-close {
 	display: none;
-}*/
+}
 
 .modal {
 	position: relative;
@@ -754,6 +744,15 @@ img {
 	text-transform: uppercase;
 }
 
+.search-form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.search-form-arrival-date {
+	display: grid;
+}
+
 .search-form-button {
 	font-family: "PT Sans", sans-serif;
 	font-size: 20px;
@@ -785,14 +784,15 @@ img {
 	background-size: 100% auto;
 	background-position: top;
 	padding-top: 35px;
+	padding-right: 70px;
 	padding-bottom: 70px;
+	padding-left: 70px;
 }
 
 .hotel-filtration-filter-group {
 	margin: 0;
 	padding: 0;
 	border: none;
-	margin-bottom: 73px;
 	display: flex;
 	flex-direction: column;
 }
@@ -802,9 +802,7 @@ img {
 	font-size: 60px;
 	line-height: 78px;
 	margin: 0;
-	padding-right: 636px;
 	padding-bottom: 8px;
-	padding-left: 70px;
 }
 
 .hotel-filtration-breadcrumbs-link {
@@ -826,7 +824,6 @@ img {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 40px;
-	padding-left: 70px;
 }
 
 .hotel-filtration-breadcrumbs-item {
@@ -872,6 +869,11 @@ img {
 	line-height: 24px;
 }
 
+.hotel-filtration-filter-list {
+	margin: 0;
+	padding: 0;
+}
+
 .hotel-filtration-filter-item::marker {
 	color: transparent;
 }
@@ -886,8 +888,6 @@ img {
 .hotel-filtration-buttons {
 	display: flex;
 	flex-direction: column;
-	padding-top: 56px;
-	padding-left: 70px;
 }
 
 .button-apply {
@@ -895,7 +895,6 @@ img {
 	padding: 8px 50px;
 	font-size: 16px;
 	line-height: 26px;
-	margin-bottom: 32px;
 }
 
 .button-reset {
@@ -912,6 +911,11 @@ img {
 
 .catalog-filter-label {
 	display: flex;
+	position: relative;
+}
+
+.catalog-filter-text {
+	position: absolute;
 }
 
 .range-input {
@@ -926,6 +930,7 @@ img {
 	color: #242424;
 	background-color: #ffffff;
 	border: none;
+	appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -961,7 +966,7 @@ img {
 }
 
 .range-bar {
-	position: absolute;
+	position: relative;
 	height: 4px;
 	background-color: #e5e5e5;
 }

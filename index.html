@@ -205,10 +205,33 @@
 				<section class="modal-content">
 					<h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
 					<form class="search-form">
-						<p>Дата Заезда</p>
-						<p>Дата Выезда</p>
-						<p>Взрослые</p>
-						<p>Дети</p>
+
+						<div class="search-form-group search-form-arrival-date">
+							<label class="search-form-label"> Дата Заезда
+								<input class="search-form-input" type="date" value="" name="date">
+							</label>
+							<p>Мы не можем отправить вас в прошлое.</p>
+						</div>
+
+						<div class="search-form-group search-form-date-of-departure">
+							<label class="search-form-label">Дата Выезда
+								<input class="search-form-input" type="date" value="" name="text">
+							</label>
+							<p>На эти даты есть свободные номера. Пока есть.</p>
+						</div>
+
+						<div class="search-form-group search-form-adults">
+							<label class="search-form-label">Взрослые
+								<input class="search-form-input" type="text" value="2" name="text">
+							</label>
+						</div>
+
+						<div class="search-form-group search-form-children">
+							<label class="search-form-label">Дети
+								<input class="search-form-input" type="text" value="2" name="date">
+							</label>
+						</div>
+
 						<button class="button search-form-button button-blue" type="submit">Найти</button>
 					</form>
 				</section>

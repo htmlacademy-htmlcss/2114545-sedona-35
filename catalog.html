@@ -68,19 +68,16 @@
 					<fieldset class="hotel-filtration-filter-group">
 						<legend class="hotel-filtration-filter-title">Инфраструктура:</legend>
 						<label class="control">
-							<input class="visually-hidden control-input" type="checkbox" name="type-of-services" value="pool" checked>
-							<span class="control-mark"></span>
-							<span class="control-label">Бассейн</span>
+							<input class="control-input" type="checkbox" name="type-of-services" value="pool" checked>
+							Бассейн
 						</label>
 						<label class="control">
-							<input class="visually-hidden control-input" type="checkbox" name="type-of-services" value="parking" checked>
-							<span class="control-mark"></span>
-							<span class="control-label">Парковка</span>
+							<input class="control-input" type="checkbox" name="type-of-services" value="parking" checked>
+							Парковка
 						</label>
 						<label class="control">
-							<input class="visually-hidden control-input" type="checkbox" name="type-of-services" value="Wi-Fi">
-							<span class="control-mark"></span>
-							<span class="control-label">Wi-Fi</span>
+							<input class="control-input" type="checkbox" name="type-of-services" value="Wi-Fi">
+							Wi-Fi
 						</label>
 					</fieldset>
 
@@ -89,19 +86,19 @@
 						<ul class="hotel-filtration-filter-list">
 							<li class="hotel-filtration-filter-item">
 								<label class="control">
-									<input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotels" checked>
+									<input class="control-input" type="radio" name="type-of-housing" value="hotels" checked>
 									Гостиница
 								</label>
 							</li>
 							<li class="hotel-filtration-filter-item">
 								<label class="control">
-									<input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
+									<input class="control-input" type="radio" name="type-of-housing" value="motel">
 									Мотель
 								</label>
 							</li>
 							<li class="hotel-filtration-filter-item">
 								<label class="control">
-									<input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
+									<input class="control-input" type="radio" name="type-of-housing" value="apartments">
 									Апартаменты
 
 								</label>
@@ -114,8 +111,12 @@
 
 						<div class="range">
 							<div class="range-wrapper-inputs">
-								<label class="catalog-filter-label"><input class="range-input" type="number" value="0" name="min-price"></label>
-								<label class="catalog-filter-label"><input class="range-input" type="number" value="9000" name="max-price"></label>
+								<label class="catalog-filter-label">
+									<span class="catalog-filter-text">от</span>
+									<input class="range-input" type="number" value="0" name="min-price"></label>
+								<label class="catalog-filter-label">
+									<span class="catalog-filter-text">до</span>
+									<input class="range-input" type="number" value="9000" name="max-price"></label>
 							</div>
 
 							<div class="range-scale">
