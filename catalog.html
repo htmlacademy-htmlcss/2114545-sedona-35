@@ -68,16 +68,19 @@
 					<fieldset class="hotel-filtration-filter-group">
 						<legend class="hotel-filtration-filter-title">Инфраструктура:</legend>
 						<label class="control">
-							<input class="control-input" type="checkbox" name="type-of-services" value="pool" checked>
-							Бассейн
+							<input class="visually-hidden control-input" type="checkbox" name="type-of-services" value="pool" checked>
+							<span class="control-mark"></span>
+							<span class="control-label">Бассейн</span>
 						</label>
 						<label class="control">
-							<input class="control-input" type="checkbox" name="type-of-services" value="parking" checked>
-							Парковка
+							<input class="visually-hidden control-input" type="checkbox" name="type-of-services" value="parking" checked>
+							<span class="control-mark"></span>
+							<span class="control-label">Парковка</span>
 						</label>
 						<label class="control">
-							<input class="control-input" type="checkbox" name="type-of-services" value="Wi-Fi">
-							Wi-Fi
+							<input class="visually-hidden control-input" type="checkbox" name="type-of-services" value="Wi-Fi">
+							<span class="control-mark"></span>
+							<span class="control-label">Wi-Fi</span>
 						</label>
 					</fieldset>
 
@@ -86,20 +89,21 @@
 						<ul class="hotel-filtration-filter-list">
 							<li class="hotel-filtration-filter-item">
 								<label class="control">
-									<input class="control-input" type="radio" name="type-of-housing" value="hotels" checked>
+									<input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotels" checked>
 									Гостиница
 								</label>
 							</li>
 							<li class="hotel-filtration-filter-item">
 								<label class="control">
-									<input class="control-input" type="radio" name="type-of-housing" value="motel">
+									<input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
 									Мотель
 								</label>
 							</li>
 							<li class="hotel-filtration-filter-item">
 								<label class="control">
-									<input class="control-input" type="radio" name="type-of-housing" value="apartments">
+									<input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments">
 									Апартаменты
+
 								</label>
 							</li>
 						</ul>
@@ -107,9 +111,22 @@
 
 					<fieldset class="hotel-filtration-filter-group">
 						<legend class="hotel-filtration-filter-title">Стоимость, ₽:</legend>
-						<ul class="hotel-filtration-filter-list">
-							<!--здесь должен быть бегунок-->
-						</ul>
+
+						<div class="range">
+							<div class="range-wrapper-inputs">
+								<label class="catalog-filter-label"><input class="range-input" type="number" value="0" name="min-price"></label>
+								<label class="catalog-filter-label"><input class="range-input" type="number" value="9000" name="max-price"></label>
+							</div>
+
+							<div class="range-scale">
+								<div class="range-bar" style="left:100px; width:226px">
+									<button type="button" class="range-square square-min"></button>
+									<button type="button" class="range-square square-max"></button>
+								</div>
+							</div>
+
+						</div>
+
 					</fieldset>
 					<div class="hotel-filtration-buttons">
 						<button class="button button-apply button-blue" type="submit">Применить</button>
@@ -233,8 +250,8 @@
 			</section>
 			<section class="catalog-subscription">
 				<h2 class="catalog-subscription-title">Подпишитесь на рассылку</h2>
-				<p class="catalog-subscription-text">Только полезная информация и никакого спама,
-					<br>честное бойскаутское!
+				<p class="catalog-subscription-text">Только полезная информация и никакого спама,<br>
+					честное бойскаутское!
 				</p>
 				<form class="catalog-subscription-form" action="https://echo.htmlacademy.ru/" method="post">
 					<input class="field" placeholder="Ваш e-mail" type="email" name="subscription-email" required>
