@@ -749,10 +749,6 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.search-form-arrival-date {
-	display: grid;
-}
-
 .search-form-button {
 	font-family: "PT Sans", sans-serif;
 	font-size: 20px;
@@ -861,6 +857,7 @@ img {
 
 .hotel-filtration-form {
 	display: flex;
+	column-gap: 70px;
 }
 
 .hotel-filtration-filter-title {
@@ -881,9 +878,6 @@ img {
 
 .control-input {
 	font-family: inherit;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 23px;
 	margin: 0;
 	width: 20px;
 	height: 20px;
@@ -902,20 +896,21 @@ img {
 .hotel-filtration-buttons {
 	display: flex;
 	flex-direction: column;
+	padding-top: 56px;
 }
 
 .button-apply {
 	background-color: #82b3d3;
 	padding: 8px 50px;
 	font-size: 16px;
-	line-height: 26px;
+	line-height: 20px;
 }
 
 .button-reset {
 	background-color: rgba(28, 28, 28, 0);
 	padding: 8px 50px;
 	font-size: 16px;
-	line-height: 26px;
+	line-height: 20px;
 }
 
 .range-wrapper-inputs {
@@ -966,6 +961,9 @@ img {
 .control {
 	position: relative;
 	display: block;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
 }
 
 .control-mark {
@@ -991,7 +989,7 @@ img {
 .range-bar {
 	position: absolute;
 	height: 4px;
-	background-color: #e5e5e5;
+	background-color: #ffffff;
 }
 
 .range-square {
@@ -1001,6 +999,7 @@ img {
 	border-radius: 5px;
 	cursor: pointer;
 	border: none;
+	background-color: #ffffff;
 }
 
 .range-square:hover {
