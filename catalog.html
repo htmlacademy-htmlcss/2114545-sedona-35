@@ -113,16 +113,20 @@
 							<div class="range-wrapper-inputs">
 								<label class="catalog-filter-label">
 									<span class="catalog-filter-text">от</span>
-									<input class="range-input" type="number" value="0" name="min-price"></label>
+									<input class="range-input range-input-left" type="number" value="0" name="min-price"></label>
 								<label class="catalog-filter-label">
 									<span class="catalog-filter-text">до</span>
-									<input class="range-input" type="number" value="9000" name="max-price"></label>
+									<input class="range-input range-input-right" type="number" value="9000" name="max-price"></label>
 							</div>
 
 							<div class="range-scale">
-								<div class="range-bar" style="left:100px; width:226px">
-									<button type="button" class="range-square square-min"></button>
-									<button type="button" class="range-square square-max"></button>
+								<div class="range-bar" style="width:287px">
+									<button class="range-square square-min">
+										<span class="visually-hidden">Изменить минимальную цену.</span>
+									</button>
+									<button class="range-square square-max">
+										<span class="visually-hidden">Изменить максимальную цену.</span>
+									</button>
 								</div>
 							</div>
 

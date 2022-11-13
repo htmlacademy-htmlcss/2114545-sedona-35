@@ -867,6 +867,7 @@ img {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 24px;
+	padding-bottom: 32px;
 }
 
 .hotel-filtration-filter-list {
@@ -883,6 +884,19 @@ img {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 23px;
+	margin: 0;
+	width: 20px;
+	height: 20px;
+	appearance: none;
+}
+
+.control-input::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-image: url("../icons/control-input-check-mark.svg");
+	background-color: #ffffff;
+	border-radius: 4px;
 }
 
 .hotel-filtration-buttons {
@@ -907,11 +921,13 @@ img {
 .range-wrapper-inputs {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 36px;
 }
 
 .catalog-filter-label {
 	display: flex;
 	position: relative;
+	margin-right: 2px;
 }
 
 .catalog-filter-text {
@@ -931,6 +947,14 @@ img {
 	background-color: #ffffff;
 	border: none;
 	appearance: textfield;
+}
+
+.range-input-left {
+	border-radius: 4px 0 0 4px;
+}
+
+.range-input-right {
+	border-radius: 0 4px 4px 0;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -962,11 +986,10 @@ img {
 	position: relative;
 	height: 4px;
 	color: #ffffff;
-	background-color: #000000;
 }
 
 .range-bar {
-	position: relative;
+	position: absolute;
 	height: 4px;
 	background-color: #e5e5e5;
 }
@@ -992,11 +1015,15 @@ img {
 	outline: 2px solid #83b3d3;
 }
 
-/*
-.square-min {}
+.square-min {
+	top: -10px;
+	left: 0;
+}
 
-.square-max {}
-*/
+.square-max {
+	top: -10px;
+	right: 70px;
+}
 
 .catalog-sorting {
 	display: flex;
