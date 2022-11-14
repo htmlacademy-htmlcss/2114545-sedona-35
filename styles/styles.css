@@ -709,9 +709,9 @@ img {
 	z-index: 100;
 }
 
-.modal-container-close {
+/*.modal-container-close {
 	display: none;
-}
+}*/
 
 .modal {
 	position: relative;
@@ -728,8 +728,8 @@ img {
 .modal-close-button {
 	position: absolute;
 	padding: 0;
-	top: 0;
-	right: 0;
+	top: 80px;
+	right: 70px;
 	width: 52px;
 	height: 52px;
 	background-color: #f2f2f2;
@@ -751,9 +751,9 @@ img {
 	text-transform: uppercase;
 }
 
-.search-form {
+.field-group-wrapper {
 	display: grid;
-	gap: 23px;
+	grid-template-columns: 133px 1fr;
 }
 
 .search-form-button {
@@ -772,19 +772,23 @@ img {
 	border-radius: 10px;
 }
 
-.search-form-arrival-date {
-	display: grid;
-	gap: 4px;
+.search-form-input {
+	background-color: #f2f2f2;
+	border: none;
+	font-family: "PT Sans", sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
 }
 
-.search-form-date-of-departure {
-	display: grid;
-	gap: 4px;
-}
-
-.search-form-adults-and-children {
-	display: grid;
-	gap: 4px;
+.search-form-label {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
 }
 
 .search-form-label::before {

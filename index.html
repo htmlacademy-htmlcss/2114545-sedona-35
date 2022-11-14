@@ -204,35 +204,38 @@
 				</button>
 				<section class="modal-content">
 					<h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
-					<form class="search-form">
+					<form action="https://echo.htmlacademy.ru/" method="post">
 
-						<div class="search-form-group search-form-arrival-date">
-							<label class="search-form-label"> Дата Заезда
-								<input class="search-form-input" type="text" value="" name="date">
-							</label>
-							<p>Мы не можем отправить вас в прошлое.</p>
+						<div class="field-group-wrapper">
+
+							<label class="search-form-label" for="arrival"> Дата Заезда:</label>
+							<p class="field-wrapper">
+								<input class="search-form-input search-form-input-date" type="text" id="arrival" placeholder="27 апреля 2020" name="date-arrival" required>
+								<span class="field-caption field-caption-error">Мы не можем отправить вас в прошлое.</span>
+							</p>
+
+							<label class="search-form-label" for="departure">Дата Выезда:</label>
+							<p class="field-wrapper">
+								<input class="search-form-input search-form-input-date" type="text" id="departure" placeholder="23 сентября 2023" name="date-departure" required>
+								<span class="field-caption">На эти даты есть свободные номера. Пока есть.</span>
+							</p>
+
+							<label class="search-form-label" for="adults">Взрослые:</label>
+							<div class="button-number-wrapper button-number-wrapper-adults">
+								<button class="search-form-label-button button-minus" type="button"></button>
+								<input class="search-form-input search-form-input-number" type="number" id="adults" name="number-adults" value="2" required>
+								<button class="search-form-label-button button-plus" type="button"></button>
+							</div>
+
+							<label class="search-form-label" for="children">Дети:</label>
+							<div class="button-number-wrapper button-number-wrapper-children">
+								<button class="search-form-label-button button-minus" type="button"></button>
+								<input class="search-form-input search-form-input-number" type="number" id="children" name="number-children" value="2" required>
+								<button class="search-form-label-button button-plus" type="button"></button>
+							</div>
+
+							<button class="button search-form-button button-blue" type="submit">Найти</button>
 						</div>
-
-						<div class="search-form-group search-form-date-of-departure">
-							<label class="search-form-label">Дата Выезда
-								<input class="search-form-input" type="text" value="" name="text">
-							</label>
-							<p>На эти даты есть свободные номера. Пока есть.</p>
-						</div>
-
-						<div class="search-form-group search-form-adults-and-children">
-							<label class="search-form-label">Взрослые
-								<input class="search-form-input" type="text" value="2" name="text">
-							</label>
-						</div>
-
-						<div class="search-form-group search-form-adults-and-children">
-							<label class="search-form-label">Дети
-								<input class="search-form-input" type="text" value="2" name="date">
-							</label>
-						</div>
-
-						<button class="button search-form-button button-blue" type="submit">Найти</button>
 					</form>
 				</section>
 			</div>
