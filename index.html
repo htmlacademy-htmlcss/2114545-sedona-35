@@ -19,7 +19,7 @@
 						<a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="javascript:volid(0)">О Седоне</a>
+						<a class="navigation-link" href="javascript:void(0)">О Седоне</a>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -28,18 +28,18 @@
 
 				<ul class="navigation-list navigation-user">
 					<li class="navigation-item">
-						<a class="navigation-link navigation-icon-search" href="javascript:volid(0)">
+						<a class="navigation-link navigation-icon-search" href="javascript:void(0)">
 							<span class="visually-hidden">Поиск</span>
 						</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link navigation-icon-heart" href="javascript:volid(0)">
+						<a class="navigation-link navigation-icon-heart" href="javascript:void(0)">
 							<span class="visually-hidden">Избранное</span>
 							<span class="navigation-icon-number">12</span>
 						</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link-want button button-brown" href="javascript:volid(0)">Хочу сюда!</a>
+						<a class="navigation-link-want button button-brown" href="javascript:void(0)">Хочу сюда!</a>
 					</li>
 				</ul>
 			</nav>
@@ -114,7 +114,7 @@
 			<section class="offer">
 				<h2 class="offer-title">Заинтересовались?</h2>
 				<p class="offer-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a class="button button-search button-brown" href="javascript:volid(0)">Поиск гостиницы в Седоне</a>
+				<a class="button button-search button-brown" href="javascript:void(0)">Поиск гостиницы в Седоне</a>
 			</section>
 
 			<section class="subscription">
@@ -164,55 +164,59 @@
 			</div>
 		</footer>
 
-		<div class="modal-container">
+		<div class="modal-container modal-container-close">
 			<div class="modal modal-search">
 				<button class="modal-close-button">
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 				<section class="modal-content">
 					<h2 class="modal-tittle">Поиск гостиницы в Седоне</h2>
-					<form action="https://echo.htmlacademy.ru/" method="post">
-						<div class="field-group-wrapper">
-							<div class="field-wrapper">
-								<label class="search-form-label search-form-label-date" for="arrival">Дата Заезда:</label>
-								<input class="search-form-input search-form-input-date" type="text" id="arrival" placeholder="27 апреля 2020" name="date-arrival" required>
-								<span class="field-caption field-caption-error">Мы не можем отправить вас в прошлое.</span>
-							</div>
-
-							<div class="field-wrapper">
-								<label class="search-form-label search-form-label-date" for="departure">Дата Выезда:</label>
-								<input class="search-form-input search-form-input-date" type="text" id="departure" placeholder="23 сентября 2023" name="date-departure" required>
-								<span class="field-caption">На эти даты есть свободные номера. Пока есть.</span>
-							</div>
-
-							<div class="quantity-container">
-								<div class="field-wrapper">
-									<label class="search-form-label" for="adults">Взрослые:</label>
-									<div class="wpapper-button-numbers wrapper-button-numbers-adults">
-										<button class="search-form-button-change form-button-minus" type="button">
-											<span class="visually-hidden">Уменьшить количество людей.</span>
-										</button>
-										<input class="search-form-input search-form-input-number number-adults" type="number" id="adults" name="number-adults" value="2" required>
-										<button class="search-form-button-change form-button-plus" type="button">
-											<span class="visually-hidden">Увеличить количество людей.</span>
-										</button>
-									</div>
-								</div>
-								<div class="field-wrapper">
-									<label class="search-form-label" for="children">Дети:</label>
-									<div class="wpapper-button-numbers wrapper-button-numbers-children">
-										<button class="search-form-button-change form-button-minus" type="button">
-											<span class="visually-hidden">Уменьшить количество людей.</span>
-										</button>
-										<input class="search-form-input search-form-input-number number-children" type="number" id="children" name="number-children" value="2" required>
-										<button class="search-form-button-change form-button-plus" type="button">
-											<span class="visually-hidden">Увеличить количество людей.</span>
-										</button>
-									</div>
-								</div>
-							</div>
-							<button class="button search-form-button button-blue" type="submit">Найти</button>
+					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+						<div class="search-form-field">
+							<label class="search-form-label" for="arrival">Дата Заезда:</label>
+							<input class="search-form-input search-form-input-date search-form-input-error" type="text" id="arrival" placeholder="Укажите дату" value="27 апреля 2020" name="date-arrival" required>
+							<span class="field-caption field-caption-error" hidden>Мы не можем отправить вас в прошлое.</span>
+							<span class="field-caption field-caption-success" hidden>На эти даты есть свободные номера. Пока есть.</span>
 						</div>
+
+						<div class="search-form-field">
+							<label class="search-form-label" for="departure">Дата Выезда:</label>
+							<input class="search-form-input search-form-input-date search-form-input-success" type="text" id="departure" placeholder="Укажите дату" value="1 сентября 2023" name="date-departure" required>
+							<span class="field-caption field-caption-error" hidden>Мы не можем отправить вас в прошлое.</span>
+							<span class="field-caption field-caption-success" hidden>На эти даты есть свободные номера. Пока есть.</span>
+						</div>
+
+						<div class="numbers-container">
+							<div class="search-form-field">
+								<label class="search-form-label" for="adults">Взрослые:</label>
+								<div class="numbers-wrapper">
+									<button class="form-button-number form-button-number-minus" type="button">
+										<span class="visually-hidden">Уменьшить количество людей.</span>
+									</button>
+									<input class="search-form-input search-form-input-number number-adults" type="number" id="adults" name="number-adults" value="2" required>
+									<button class="form-button-number form-button-number-plus" type="button">
+										<span class="visually-hidden">Увеличить количество людей.</span>
+									</button>
+								</div>
+							</div>
+
+							<div class="search-form-field search-form-field-with-tooltip">
+								<label class="search-form-label" for="children">Дети:</label>
+								<div class="numbers-wrapper">
+									<button class="form-button-number form-button-number-minus" type="button">
+										<span class="visually-hidden">Уменьшить количество людей.</span>
+									</button>
+									<input class="search-form-input search-form-input-number number-children" type="number" id="children" name="number-children" value="2" aria-describedby="tooltip-children" required>
+									<button class="form-button-number form-button-number-plus" type="button">
+										<span class="visually-hidden">Увеличить количество людей.</span>
+									</button>
+									<span class="tooltip">
+										<span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<button class="button search-form-button-submit button-blue" type="submit">Найти</button>
 					</form>
 
 				</section>
