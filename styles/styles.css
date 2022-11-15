@@ -206,7 +206,7 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-image: url("../icons/search.svg");
+	background-image: url("../icons/stack.svg#search");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -217,7 +217,7 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-image: url("../icons/heart.svg");
+	background-image: url("../icons/stack.svg#heart");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -256,10 +256,9 @@ img {
 
 .greeting {
 	color: #ffffff;
-	background-image: url("../images/welcome-divider.svg"), url("../images/welcome-background.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-position: bottom, center;
+	background:
+		url("../icons/stack.svg#welcome-divider") no-repeat bottom / 1200px 57px,
+		url("../images/welcome-background.jpg") no-repeat center / cover;
 	position: relative;
 }
 
@@ -411,7 +410,7 @@ img {
 	display: block;
 	width: 75px;
 	height: 72px;
-	background-image: url("../icons/house.svg");
+	background-image: url("../icons/stack.svg#house");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -425,7 +424,7 @@ img {
 	display: block;
 	width: 74px;
 	height: 70px;
-	background-image: url("../icons/food.svg");
+	background-image: url("../icons/stack.svg#food");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -439,7 +438,7 @@ img {
 	display: block;
 	width: 68px;
 	height: 76px;
-	background-image: url("../icons/souvenirs.svg");
+	background-image: url("../icons/stack.svg#souvenirs");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -593,12 +592,15 @@ img {
 .footer-container {
 	display: flex;
 	align-items: center;
+	padding: 40px 70px 30px;
 }
 
 .footer-social-list {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 142px;
+	max-width: 144px;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-social-item::marker {
@@ -607,47 +609,38 @@ img {
 
 .footer-social-link {
 	display: block;
-	padding: 12px 13px;
+	padding: 8px 12px;
 	color: #83b3d3;
 }
 
 .footer-social-link:hover {
 	color: #68a2ca;
-	outline: none;
 }
 
-.footer-button-vkontakte::before {
+.footer-social-link::before {
 	content: "";
 	display: block;
 	width: 24px;
-	height: 14px;
-	mask: url("../icons/vkontakte.svg") no-repeat center / contain;
+	height: 24px;
+	mask: var(--icon) no-repeat center / contain;
 	background: currentcolor;
 }
 
-.footer-button-telegram::before {
-	content: "";
-	display: block;
-	width: 18px;
-	height: 15px;
-	mask: url("../icons/telegram.svg") no-repeat center / contain;
-	background: currentcolor;
+.footer-button-vkontakte {
+	--icon: url("../icons/stack.svg#vkontakte");
 }
 
-.footer-button-youtube::before {
-	content: "";
-	display: block;
-	width: 22px;
-	height: 17px;
-	mask: url("../icons/youtube.svg") no-repeat center / contain;
-	background: currentcolor;
+.footer-button-telegram {
+	--icon: url("../icons/stack.svg#telegram");
+}
+
+.footer-button-youtube {
+	--icon: url("../icons/stack.svg#youtube");
 }
 
 .footer-contact {
 	min-width: 720px;
 	margin: 0;
-	padding-top: 45px;
-	padding-bottom: 35px;
 }
 
 .footer-contact-address {
@@ -674,9 +667,6 @@ img {
 .footer-link {
 	width: 115px;
 	height: 33px;
-	padding-top: 48px;
-	padding-right: 70px;
-	padding-bottom: 39px;
 	color: #000000;
 }
 
@@ -690,7 +680,7 @@ img {
 	display: block;
 	width: 115px;
 	height: 33px;
-	mask: url("../icons/logo-htmlacademy.svg") no-repeat center / contain;
+	mask: url("../icons/stack.svg#logo-htmlacademy") no-repeat center / contain;
 	background: currentcolor;
 }
 
@@ -709,9 +699,9 @@ img {
 	z-index: 100;
 }
 
-/*.modal-container-close {
+.modal-container-close {
 	display: none;
-}*/
+}
 
 .modal {
 	position: relative;
@@ -732,13 +722,9 @@ img {
 	right: 70px;
 	width: 52px;
 	height: 52px;
-	background-color: #f2f2f2;
 	border: none;
 	border-radius: 50px;
-	background-image: url("../icons/modal-close.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	cursor: pointer;
+	background: #f2f2f2 url("../icons/stack.svg#modal-close") no-repeat center / 21px 21px;
 }
 
 .modal-tittle {
@@ -800,7 +786,7 @@ img {
 	display: block;
 	width: 40px;
 	height: 48px;
-	background-image: url("../icons/minus.svg");
+	background-image: url("../icons/stack.svg#minus");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -811,7 +797,7 @@ img {
 	display: block;
 	width: 40px;
 	height: 48px;
-	background-image: url("../icons/plus.svg");
+	background-image: url("../icons/stack.svg#plus");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -822,7 +808,7 @@ img {
 	display: block;
 	width: 40px;
 	height: 48px;
-	background-image: url("../icons/minus.svg");
+	background-image: url("../icons/stack.svg#minus");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -833,7 +819,7 @@ img {
 	display: block;
 	width: 40px;
 	height: 48px;
-	background-image: url("../icons/plus.svg");
+	background-image: url("../icons/stack.svg#plus");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -850,7 +836,7 @@ img {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-image: url("../icons/search-form-calendar.svg");
+	background-image: url("../icons/stack.svg#calendar");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -967,7 +953,7 @@ img {
 	margin-inline: 10px;
 	width: 8px;
 	height: 20px;
-	background: url("../icons/bradcrumbs-arrow.svg") no-repeat center / 100%;
+	background: url("../icons/stack.svg#bradcrumbs-arrow") no-repeat center / 100%;
 }
 
 .hotel-filtration-icon-home::before {
@@ -975,7 +961,7 @@ img {
 	display: block;
 	width: 13px;
 	height: 15px;
-	background-image: url("../icons/bradcrumbs-home.svg");
+	background-image: url("../icons/stack.svg#bradcrumbs-home");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1042,7 +1028,7 @@ img {
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-image: url("../icons/radio.svg");
+	background-image: url("../icons/stack.svg#radio");
 	border-radius: 10px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1054,7 +1040,7 @@ img {
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-image: url("../icons/checkbox.svg");
+	background-image: url("../icons/stack.svg#checkbox");
 	border-radius: 4px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1165,7 +1151,7 @@ img {
 	display: block;
 	width: 226px;
 	height: 4px;
-	background-image: url("../icons/Line.svg");
+	background: #ffffff;
 }
 
 .range-square {
@@ -1254,7 +1240,7 @@ img {
 	display: block;
 	width: 16px;
 	height: 14px;
-	background-image: url("../icons/catalog-view-button-cards.svg");
+	background-image: url("../icons/stack.svg#view-cards");
 }
 
 .catalog-view-button-card::before {
@@ -1262,7 +1248,7 @@ img {
 	display: block;
 	width: 16px;
 	height: 14px;
-	background-image: url("../icons/catalog-view-button-card.svg");
+	background-image: url("../icons/stack.svg#view-card");
 }
 
 .catalog-view-button-list::before {
@@ -1270,7 +1256,7 @@ img {
 	display: block;
 	width: 16px;
 	height: 14px;
-	background-image: url("../icons/catalog-view-button-list.svg");
+	background-image: url("../icons/stack.svg#view-list");
 }
 
 
@@ -1388,7 +1374,7 @@ img {
 	display: block;
 	width: calc(24px * var(--star-count) - 6px);
 	height: 17px;
-	background: url("../icons/star.svg") repeat-x left / 24px 17px;
+	background: url("../icons/stack.svg#star") repeat-x left / 24px 17px;
 }
 
 .hotel-stars-1 {
