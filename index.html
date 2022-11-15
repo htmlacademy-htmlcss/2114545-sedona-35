@@ -208,35 +208,43 @@
 
 						<div class="field-group-wrapper">
 
-							<label class="search-form-label" for="arrival"> Дата Заезда:</label>
+							<label class="search-form-label search-form-label-date" for="arrival"> Дата Заезда:</label>
 							<p class="field-wrapper">
 								<input class="search-form-input search-form-input-date" type="text" id="arrival" placeholder="27 апреля 2020" name="date-arrival" required>
 								<span class="field-caption field-caption-error">Мы не можем отправить вас в прошлое.</span>
 							</p>
 
-							<label class="search-form-label" for="departure">Дата Выезда:</label>
+							<label class="search-form-label search-form-label-date" for="departure">Дата Выезда:</label>
 							<p class="field-wrapper">
 								<input class="search-form-input search-form-input-date" type="text" id="departure" placeholder="23 сентября 2023" name="date-departure" required>
 								<span class="field-caption">На эти даты есть свободные номера. Пока есть.</span>
 							</p>
 
 							<label class="search-form-label" for="adults">Взрослые:</label>
-							<div class="button-number-wrapper button-number-wrapper-adults">
-								<button class="search-form-label-button button-minus" type="button"></button>
-								<input class="search-form-input search-form-input-number" type="number" id="adults" name="number-adults" value="2" required>
-								<button class="search-form-label-button button-plus" type="button"></button>
+							<div class="wpapper-button-numbers wrapper-button-numbers-adults">
+								<button class="search-form-button-change form-button-minus" type="button">
+									<span class="visually-hidden">Уменьшить количество людей.</span>
+								</button>
+								<input class="search-form-input search-form-input-number number-adults" type="number" id="adults" name="number-adults" value="2" required>
+								<button class="search-form-button-change form-button-plus" type="button">
+									<span class="visually-hidden">Увеличить количество людей.</span>
+								</button>
 							</div>
 
 							<label class="search-form-label" for="children">Дети:</label>
-							<div class="button-number-wrapper button-number-wrapper-children">
-								<button class="search-form-label-button button-minus" type="button"></button>
-								<input class="search-form-input search-form-input-number" type="number" id="children" name="number-children" value="2" required>
-								<button class="search-form-label-button button-plus" type="button"></button>
+							<div class="wpapper-button-numbers wrapper-button-numbers-children">
+								<button class="search-form-button-change form-button-minus" type="button">
+									<span class="visually-hidden">Уменьшить количество людей.</span>
+								</button>
+								<input class="search-form-input search-form-input-number number-children" type="number" id="children" name="number-children" value="2" required>
+								<button class="search-form-button-change form-button-plus" type="button">
+									<span class="visually-hidden">Увеличить количество людей.</span>
+								</button>
 							</div>
-
 							<button class="button search-form-button button-blue" type="submit">Найти</button>
 						</div>
 					</form>
+
 				</section>
 			</div>
 		</div>
