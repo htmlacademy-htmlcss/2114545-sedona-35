@@ -709,9 +709,9 @@ img {
 	z-index: 100;
 }
 
-/*.modal-container-close {
+.modal-container-close {
 	display: none;
-}*/
+}
 
 .modal {
 	position: relative;
