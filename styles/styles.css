@@ -240,8 +240,8 @@ img {
 	position: absolute;
 	top: 9px;
 	left: 20px;
-	padding-inline: 5px;
-	min-width: 11px;
+	padding: 5px 4.5px;
+	min-width: 20px;
 	text-align: center;
 	box-sizing: border-box;
 }
@@ -269,6 +269,7 @@ img {
 		url("../icons/stack.svg#welcome-divider") no-repeat bottom / 1200px 57px,
 		url("../images/welcome-background.jpg") no-repeat center / cover;
 	position: relative;
+	background-color: #a38588;
 }
 
 .greeting-welcome-img {
@@ -509,7 +510,7 @@ img {
 
 .subscription {
 	background-image: url("../images/subscription-background-image.jpg");
-	background-color: #000000;
+	background-color: #a09b95;
 	color: #ffffff;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
