@@ -67,6 +67,11 @@ img {
 	outline: none;
 }
 
+.button-brown:active {
+	background-color: #756157;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .button-brown:disabled {
 	background-color: #e5e5e5;
 }
@@ -80,6 +85,11 @@ img {
 .button-blue:hover {
 	background-color: #68a2ca;
 	outline: none;
+}
+
+.button-blue:active {
+	background-color: #82b3d3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .button-blue:disabled {
@@ -97,6 +107,11 @@ img {
 	outline: none;
 }
 
+.button-green:active {
+	background-color: #7db54f;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .button-green:disabled {
 	background-color: #6c9e42;
 }
@@ -109,6 +124,10 @@ img {
 
 .button-clear:hover {
 	opacity: 60%;
+}
+
+.button-clear:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .button-clear:disabled {
@@ -173,6 +192,10 @@ img {
 	text-align: center;
 	text-decoration: none;
 	position: relative;
+}
+
+.navigation-link:hover {
+	background-color: rgba(131, 179, 211, 0.12);
 }
 
 .navigation-link-current::after {
@@ -606,6 +629,10 @@ img {
 	color: #68a2ca;
 }
 
+.footer-social-link:active {
+	color: rgba(104, 162, 202, 0.3);
+}
+
 .footer-social-link::before {
 	content: "";
 	display: block;
@@ -651,6 +678,10 @@ img {
 	color: #756157;
 }
 
+.footer-contact-address-phone:active {
+	color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-link {
 	width: 115px;
 	height: 33px;
@@ -673,6 +704,10 @@ img {
 
 .htmlacademy-link:hover::before {
 	color: #756157;
+}
+
+.htmlacademy-link:active::before {
+	color: rgba(117, 97, 87, 0.3);
 }
 
 .modal-container {
@@ -783,7 +818,6 @@ img {
 
 .search-form-field-with-tooltip {
 	grid-template-columns: max-content 1fr;
-	/* grid-template-rows: 48px auto; */
 }
 
 .search-form-input {
@@ -953,7 +987,6 @@ img {
 	color: #ffffff;
 	background-color: #333333;
 	box-shadow: 0 15px 30px rgb(0 0 0 / 0.3);
-
 	visibility: hidden;
 	opacity: 0.01;
 	transition: visibility 0.3s, opacity 0.3s;
@@ -1022,6 +1055,14 @@ img {
 	flex-direction: column;
 }
 
+.control:hover {
+	opacity: 60%;
+}
+
+.control:active {
+	opacity: 30%;
+}
+
 .hotel-filtration-filter-group-price {
 	margin-left: auto;
 }
@@ -1062,6 +1103,14 @@ img {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 21px;
+}
+
+.hotel-filtration-breadcrumbs-link:hover {
+	opacity: 60%;
+}
+
+.hotel-filtration-breadcrumbs-link:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-filtration-breadcrumbs-item::marker {
@@ -1348,7 +1397,12 @@ img {
 }
 
 .select-control:disabled {
-	opacity: 0.3;
+	border-color: rgba(0, 0, 0, 0.3);
+}
+
+.select-control:disabled:hover {
+	cursor: default;
+	border-color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-view-buttons {
@@ -1635,6 +1689,25 @@ img {
 	display: flex;
 	justify-content: center;
 	margin: 0;
+}
+
+.field:hover {
+	outline: 2px solid #68a2ca;
+}
+
+.field:active {
+	outline: 2px solid #3f5e72;
+}
+
+.field:disabled {
+	outline: none;
+	opacity: 0.3;
+}
+
+.field:disabled:hover {
+	cursor: default;
+	outline: none;
+	opacity: 0.3;
 }
 
 .catalog-button-sign-up {
